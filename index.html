@@ -42,41 +42,30 @@
     <main class="main-content">
       <!-- Tab Navigation -->
       <div class="tab-nav">
-        <button class="tab-btn active" data-tab="research">Research</button>
+        <button class="tab-btn active" data-tab="research">Home</button>
         <button class="tab-btn" data-tab="academics">Academics</button>
         <button class="tab-btn" data-tab="outreach">Outreaching & Volunteering</button>
         <div class="search-container">
-          <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+          <input type="text" id="searchInput" class="search-input" placeholder="search in this site...">
           <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
       </div>
 
-      <!-- Persistent Intro -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm Hari Prasad Gajurel, a Mechanical Engineer with a strong interest in both
-          theoretical and applied problems in control theory and AI/ML.
-        </p>
-        <p>
-          I am genuinely astounded by "The unreasonable effectiveness of mathematics as the language of nature" (Eugene
-          Wigner). This drives my passion for the software implementation of theoretical ideas, 3D CAD design, and
-          embedded systems. To me, engineering is about optimizing parameters to obtain the best result.
-        </p>
-      </section>
-
-
       <!-- Tab Content: Research -->
       <div id="research" class="tab-content active">
-        <section id="research-interests">
-          <h3>Research & Interests</h3>
-          <ul class="bullet-list">
-            <li><strong>Control Systems:</strong> Optimizing parameters for stability and performance.</li>
-            <li><strong>Machine Learning:</strong> Bridging control systems and learning algorithms.</li>
-            <li><strong>Robotics:</strong> 3D Design, Motion Planning, and Embedded Systems.</li>
-          </ul>
+        <!-- Intro (Moved to Research tab) -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            Hello! I'm Hari Prasad Gajurel, a Mechanical Engineer with a strong interest in both
+            theoretical and applied problems in control theory and AI/ML.
+          </p>
+          <p>
+            I am genuinely astounded by "The unreasonable effectiveness of mathematics as the language of nature" (Eugene
+            Wigner). This drives my passion for the software implementation of theoretical ideas, 3D CAD design, and
+            embedded systems. To me, engineering is about optimizing parameters to obtain the best result.
+          </p>
         </section>
-
         <section id="research-projects">
           <h3>Research Projects</h3>
           <div class="research-project-card">
@@ -102,27 +91,9 @@
                 <span class="date">2024 - 2025</span>
               </div>
               <div class="list-details">
-                <em>Project Lead, Mechanical Design & Control</em>
                 <p>
-                  Design and Bench top validation of a prototype of a powered ankle foot prosthesis which utilizes
-                  a belt-pulley transmission, driven by an Ak-60-6 actuators and integrates an STM-32 micro-controller.
-                  Integrated the actuator into an Ankle, making the prosthetics lighter and human-centric. The system
-                  enables to follow the natural gait Pattern.
+                  Traditional prostheses are incapable of fully aiding in human locomotion, resulting in amputees with asymmetric gait patterns, and small stride lengths. Powered prostheses can improve mobility, comfort, and quality of life for amputees of the lower extremities. This project focuses on the design and benchtop validation of a prototype of a powered ankle foot prosthesis. The PAFP utilizes a belt-pulley transmission, driven by an AK-60-6 actuator, and integrates an STM-32 micro-controller to facilitate communication among sensors which includes IMU, encoder, and motor controller in real time. A series of benchtop tests were conducted on the setup to validate the transmission efficiency, control and structural functionality. Experimental validation included backdrivability tests to assess compliance and loading tests to evaluate the motor's torque response to external load. Finally, position tracking was performed to replicate the natural ankle pitch angle profile observed in human gait.
                 </p>
-                <div style="margin-top: 10px;">
-                  <strong>Contributions:</strong>
-                  <ul class="bullet-list" style="margin-top: 5px;">
-                    <li>Designed CAD (SolidWorks)
-                      <ul style="padding-left: 20px; list-style-type: circle; margin-bottom: 5px;">
-                        <li>Mechanical Calculations (Kinematics, Buckling, FBD)</li>
-                        <li>FEA Structure Analysis (Ansys)</li>
-                      </ul>
-                    </li>
-                    <li>Mathematical Framework and Modeling (MATLAB, Simulink)</li>
-                    <li>Prototyped (3D Printing, CNC Machining, Soldering, & Circuit Design)</li>
-                    <li>Control System Design - Cascaded PID with state-machines (C and C++)</li>
-                  </ul>
-                </div>
                 <p style="margin-top: 10px;">
                   <strong>Links and Results:</strong><br>
                   • GitHub Code of mathematical Modelling : <a href="#" target="_blank">Modelling</a><br>
@@ -153,20 +124,9 @@
                 <span class="date">2024</span>
               </div>
               <div class="list-details">
-                <em>Co-writers: Hari Prasad Gajurel(1)∗, Author’s name(2), Author’s name(3)</em>
+
                 <p>
-                  <strong>Abstract:</strong> PocketQubes are picosatellites with a form factor of 5 cm × 5 cm × 5 cm and a mass not exceeding 250 g. Due to constraints in size and mass, the design process can be challenging. This paper focuses on the cost-effectiveness of the design and development of Sanosat-2 for a Low Earth Orbit (LEO) mission using commercial off-the-shelf (COTS) components to provide a comprehensive understanding of the design process and applications.
-                </p>
-                <div style="margin-top: 10px;">
-                  <strong>Key Highlights & Contributions:</strong>
-                  <ul class="bullet-list" style="margin-top: 5px;">
-                    <li><strong>Improved Sensing Capabilities:</strong> Equipped with optical payloads (cameras and Sun sensors) developed at ORION Space Lab, and an IMU for navigation.</li>
-                    <li><strong>Advanced ADCS:</strong> Collects orbital data through Sun sensors and the IMU for advanced Attitude Determination and Control System (ADCS) missions. Features deployable solar panels and passive ADCS control using magnets.</li>
-                    <li><strong>Communication & Imaging:</strong> Functions as a digital amateur radio repeater. Demonstrates transmission of captured images via SSDV packets using GFSK modulation with a dipole antenna.</li>
-                  </ul>
-                </div>
-                <p style="margin-top: 10px;">
-                  <strong>Impact:</strong> The data collected will benefit researchers and industries in orbit modeling, network design for IoT applications, satellite constellation design, and reliability assessment of COTS components for advanced LEO missions (enabling digital twins).
+                  PocketQubes are picosatellites with a form factor of 5 cm × 5 cm × 5 cm and a mass not exceeding 250 g. They are designed for specialized missions with limited time periods and typically contain only small volumes of payloads. Due to constraints in size and mass, the design process of PocketQubes can be challenging. This paper focuses on the cost-effectiveness of the design and development of Sanosat-2 for a Low Earth Orbit (LEO) mission using commercial off-the-shelf (COTS) components to provide a comprehensive understanding of the design process and applications. Following the de-orbit of Sanosat-1 on the Feb-7,2024 March, Sanosat-2 is designed with significantly improved sensing capabilities, primarily using optical payloads such as cameras and Sun sensors developed using COTS components at ORION Space Lab. The satellite is equipped with a camera for imaging, an Inertial Measurement Unit (IMU) for navigation, and Sun sensors as the primary payloads. Sanosat-2 aims to acquire orbital data through Sun sensors and the IMU for more advanced Attitude Determination and Control System (ADCS) missions. The satellite also functions as a digital amateur radio repeater. Furthermore, Sanosat-2 demonstrates the transmission of images captured from orbit via SSDV packets using GFSK modulation with a dipole antenna, and showcases deployable solar panels and passive ADCS control using magnets to highlight low-cost PocketQube fabrication. The PocketQube is expected to switch between different data rates for various payload data and imaging requirements. The data collected by Sanosat-2 will benefit researchers and industries in areas such as orbit modeling, network design for IoT applications, satellite constellation design, and the reliability assessment of COTS components for advanced satellite missions. The satellite data and behavior transmitted to the Earth station will enable the creation of digital twins for various LEO missions.
                 </p>
               </div>
             </div>
@@ -192,68 +152,36 @@
           </ul>
         </section>
 
-        <section id="projects">
-          <h3>Publications & Projects</h3>
-          <ul class="academic-list">
+        <section id="undergrad-projects">
+          <h3>Undergraduate Projects + Research</h3>
+          
+          <div class="academic-item" style="margin-bottom: 25px;">
+            <strong>Simulation of Leg :</strong><br>
+            Spring 2024 - Fall 2025<br>
+            [[Final Project Report]]<br>
+            Mathematical Modeling, CAD design, and benchtop testing for an active foot prosthesis capable of natural gait pattern tracking.
+          </div>
 
-            <!-- NEW PROJECT PLACEHOLDER -->
-            <li>
-              <div class="list-title">
-                <strong>[Title of Your Overleaf Project]</strong>
-                <span class="date">2024</span>
-              </div>
-              <div class="list-details">
-                <em>w/ Co-authors (if any)</em>
-                <p>
-                  [Short description of the project from the Overleaf document. Briefly explain the problem and your
-                  solution/methodology.]
-                  <a href="[Link to PDF/Overleaf]" target="_blank">[PDF/Link]</a>
-                </p>
-              </div>
-            </li>
+          <div class="academic-item" style="margin-bottom: 25px;">
+            <strong>ABU Robocon 2023 Robot :</strong><br>
+            2023<br>
+            [[Video]]<br>
+            Designed and manufactured the robot mechanism; conducted stress analysis and optimization for performance reliability.
+          </div>
 
-            <!-- Existing Projects Converted to List Format -->
-            <li>
-              <div class="list-title">
-                <strong>ABU Robocon 2023 Robot</strong>
-                <span class="date">2023</span>
-              </div>
-              <div class="list-details">
-                <em>Robot Design & Mechanism Analysis</em>
-                <p>
-                  Designed and manufactured the robot mechanism; conducted stress analysis and optimization for
-                  performance reliability.
-                </p>
-              </div>
-            </li>
+          <div class="academic-item" style="margin-bottom: 25px;">
+            <strong>Custom Drone Development :</strong><br>
+            2023<br>
+            Winner, Dronacharya Competition (Locus)<br>
+            Mathematical modeling (MATLAB), hardware selection, and assembly of a custom drone.
+          </div>
 
-            <li>
-              <div class="list-title">
-                <strong>Custom Drone Development</strong>
-                <span class="date">2023</span>
-              </div>
-              <div class="list-details">
-                <em>Winner, Dronacharya Competition (Locus)</em>
-                <p>
-                  Mathematical modeling (MATLAB), hardware selection, and assembly of a custom drone.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div class="list-title">
-                <strong>Maze Solving Robot</strong>
-                <span class="date">2022</span>
-              </div>
-              <div class="list-details">
-                <em>Algorithm Implementation</em>
-                <p>
-                  Implemented Dijkstra's algorithm in C++ for shortest-path autonomous navigation.
-                </p>
-              </div>
-            </li>
-
-          </ul>
+          <div class="academic-item" style="margin-bottom: 25px;">
+            <strong>Maze Solving Robot :</strong><br>
+            2022<br>
+            Algorithm Implementation<br>
+            Implemented Dijkstra's algorithm in C++ for shortest-path autonomous navigation.
+          </div>
         </section>
 
         <section id="certificates">

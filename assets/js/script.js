@@ -32,4 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
       tabNav.classList.remove('scrolled');
     }
   });
+
+  // Search toggle logic
+  const searchBtn = document.getElementById('searchBtn');
+  const searchContainer = document.querySelector('.search-container');
+  const searchInput = document.getElementById('searchInput');
+
+  searchBtn.addEventListener('click', () => {
+    searchContainer.classList.toggle('active');
+    if (searchContainer.classList.contains('active')) {
+      searchInput.focus();
+    }
+  });
 });

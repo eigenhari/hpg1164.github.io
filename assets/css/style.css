@@ -15,7 +15,7 @@
   --color-link-hover: #004499;
   --color-border: #eeeeee;
 
-  --max-width: 1000px;
+  --max-width: 1280px;
   --sidebar-width: 280px;
   --spacing-base: 20px;
 }
@@ -125,6 +125,8 @@ p {
 .sidebar h1 {
   margin-bottom: 10px;
   font-weight: 700;
+  white-space: nowrap;
+  font-size: 1.6rem;
 }
 
 .subtitle {
@@ -278,8 +280,8 @@ ul {
 }
 
 .research-project-image {
-  flex: 0 0 45%;
-  max-width: 45%;
+  flex: 0 0 55%;
+  max-width: 55%;
 }
 
 /* NEW: Styles for Research Media Grid (Gif + Photo) */
@@ -480,27 +482,49 @@ ul {
 .search-container {
   display: flex;
   align-items: center;
-  background: white;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.search-container.active {
   border: 1px solid #000;
+  background: white;
 }
 
 .search-input {
   border: none;
   outline: none;
-  padding: 8px 10px;
+  padding: 0;
   font-family: var(--font-heading);
   font-size: 0.9rem;
   background: transparent;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.search-container.active .search-input {
   width: 150px;
+  padding: 8px 10px 8px 15px;
+  opacity: 1;
 }
 
 .search-btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 8px 10px;
+  padding: 8px 12px;
   color: var(--color-text);
+  border-left: 1px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.search-container.active .search-btn {
   border-left: 1px solid #eee;
+  border-radius: 0 20px 20px 0;
 }
 
 .search-btn:hover {
@@ -508,10 +532,11 @@ ul {
 }
 
 @media (max-width: 600px) {
-  .search-container {
+  .search-container.active {
     width: 100%;
   }
-  .search-input {
+  .search-container.active .search-input {
     flex: 1;
+    width: auto;
   }
 }
