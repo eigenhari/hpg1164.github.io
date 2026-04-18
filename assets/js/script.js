@@ -22,4 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Highlight header with black color on scroll
+  const tabNav = document.querySelector('.tab-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      tabNav.classList.add('scrolled');
+    } else {
+      tabNav.classList.remove('scrolled');
+    }
+  });
 });

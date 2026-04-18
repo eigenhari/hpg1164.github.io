@@ -45,6 +45,10 @@
         <button class="tab-btn active" data-tab="research">Research</button>
         <button class="tab-btn" data-tab="academics">Academics</button>
         <button class="tab-btn" data-tab="outreach">Outreaching & Volunteering</button>
+        <div class="search-container">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+          <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
       </div>
 
       <!-- Persistent Intro -->
@@ -123,6 +127,46 @@
                   <strong>Links and Results:</strong><br>
                   • GitHub Code of mathematical Modelling : <a href="#" target="_blank">Modelling</a><br>
                   • Result : <a href="#" target="_blank">Report</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="research-project-card" style="margin-top: 20px;">
+            <div class="research-project-image">
+              <div class="research-media-grid">
+                <div class="media-item">
+                  <!-- TODO: User to replace with actual image filename -->
+                  <img src="./assets/images/placeholder.jpg" alt="Sanosat-2.1 Design">
+                  <p class="image-caption">Figure 1: Sanosat-2.1 Architecture</p>
+                </div>
+                <div class="media-item">
+                  <!-- TODO: User to replace with actual image filename -->
+                  <img src="./assets/images/placeholder.jpg" alt="Sanosat-2.1 Prototype/CAD">
+                  <p class="image-caption">Figure 2: Prototype & COTS Components</p>
+                </div>
+              </div>
+            </div>
+            <div class="research-project-content">
+              <div class="list-title">
+                <strong>Design and development of PocketQube Sanosat-2.1 for LEO Missions</strong>
+                <span class="date">2024</span>
+              </div>
+              <div class="list-details">
+                <em>Co-writers: Hari Prasad Gajurel(1)∗, Author’s name(2), Author’s name(3)</em>
+                <p>
+                  <strong>Abstract:</strong> PocketQubes are picosatellites with a form factor of 5 cm × 5 cm × 5 cm and a mass not exceeding 250 g. Due to constraints in size and mass, the design process can be challenging. This paper focuses on the cost-effectiveness of the design and development of Sanosat-2 for a Low Earth Orbit (LEO) mission using commercial off-the-shelf (COTS) components to provide a comprehensive understanding of the design process and applications.
+                </p>
+                <div style="margin-top: 10px;">
+                  <strong>Key Highlights & Contributions:</strong>
+                  <ul class="bullet-list" style="margin-top: 5px;">
+                    <li><strong>Improved Sensing Capabilities:</strong> Equipped with optical payloads (cameras and Sun sensors) developed at ORION Space Lab, and an IMU for navigation.</li>
+                    <li><strong>Advanced ADCS:</strong> Collects orbital data through Sun sensors and the IMU for advanced Attitude Determination and Control System (ADCS) missions. Features deployable solar panels and passive ADCS control using magnets.</li>
+                    <li><strong>Communication & Imaging:</strong> Functions as a digital amateur radio repeater. Demonstrates transmission of captured images via SSDV packets using GFSK modulation with a dipole antenna.</li>
+                  </ul>
+                </div>
+                <p style="margin-top: 10px;">
+                  <strong>Impact:</strong> The data collected will benefit researchers and industries in orbit modeling, network design for IoT applications, satellite constellation design, and reliability assessment of COTS components for advanced LEO missions (enabling digital twins).
                 </p>
               </div>
             </div>
